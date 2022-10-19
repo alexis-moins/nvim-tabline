@@ -34,7 +34,7 @@ local function tabline(options)
         end
         -- buf name
         if bufname ~= '' then
-            s = s .. '[' .. fn.fnamemodify(bufname, ':t') .. '] '
+            s = s .. fn.fnamemodify(bufname, ':t') .. ' '
         else
             s = s .. options.no_name .. ' '
         end
